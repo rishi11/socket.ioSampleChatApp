@@ -22,7 +22,7 @@
           if(socket != null || socket != undefined){
             socket.disconnect();
           }
-          socket = io.connect("http://localhost:3000");
+          socket = io.connect("https://socketiosampleapp.herokuapp.com/#/register");
         }
 
         function listenToRegistrationResponse(){
