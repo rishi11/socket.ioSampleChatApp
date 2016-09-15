@@ -1,0 +1,17 @@
+{
+  "name": "socketiodemo",
+  "version": "1.0.0",
+  "description": "A demo for group chat and one to one chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Rishi Katyal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "q": "^1.4.1",
+    "socket.io": "^1.4.8",
+    "tracer": "^0.8.3"
+  }
+}

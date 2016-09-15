@@ -1,0 +1,11 @@
+<div class="container-fluid">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1>Provide A Unique ID To Enter ChatRoom</h1>
+            <label for="Unique User Id" class="col-sm-2 control-label">Unique User Id</label>
+            <input ng-model="userId" type="text" class="form-control" id="userId" placeholder="Unique User Id"/>
+            <button ng-click="model.registerUser(userId)" class="form-control btn btn-default">Enter ChatRoom</button>
+            <hr/>
+            <h3 class="errorMessage" ng-show="model.errorDisplay">{{model.error}}</h3>
+        </div>
+</div>

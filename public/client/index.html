@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SocketIoSampleApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socket.io Sample</title>
+
+    <!-- bootstrap libraries-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AngularJS libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.js"></script>
+
+    <!-- Socket.io Clinet JS -->
+    <script src='/socket.io/socket.io.js'></script>
+
+    <!-- Self defined CSS -->
+    <link href="views/css/style.css" rel="stylesheet" />
+
+    <!-- Angular JS Configuration Files -->
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+
+    <!-- Angular JS Services -->
+    <script src="services/session.service.js"></script>
+    <script src="services/connection.service.js"></script>
+
+    <!-- Angular JS Controllers -->
+    <script src="views/main/main.controller.js"></script>
+    <script src="views/header/header.controller.js"></script>
+    <script src="views/register/register.controller.js"></script>
+    <script src="views/chat/chat.controller.js"></script>
+
+
+
+</head>
+
+<body ng-controller="MainController">
+  <div ng-include src="'views/header/header.view.html'"></div>
+  <!-- <div ng-include src="'views/sidebar/sidebar.view.html'"></div> -->
+  <div ng-view>
+  </div>
+</body>
+</html>
